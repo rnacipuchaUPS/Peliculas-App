@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card center>
+    <ion-card-header>
+    Datos del usuario  
+    </ion-card-header>
+    <ion-card-content>
+    <ion-list>
+      <ion-item>
+        <ion-label fixed>Usuario</ion-label>
+        <ion-input type="text"[(ngModel)]="user"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>Password</ion-label>
+        <ion-input type="text"[(ngModel)]="pass"></ion-input>
+      </ion-item>
+      </ion-list>
+      <div padding> 
+        <button block (click)="Sigup()">Sing up</button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
