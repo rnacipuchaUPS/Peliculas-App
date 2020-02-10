@@ -18,10 +18,9 @@ export class RegistroPage implements OnInit {
   }
 
   enviarUsuario() {
-    this.movieService.usuarioPost()
+    this.movieService.usuarioPost(this.usuarioo)
     .subscribe(res1 => {
-      this.usuarioo = res1;
-      console.log(this.usuarioo);
+      console.log(res1);
       
     });
   }
