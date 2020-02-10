@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card center>
+    <ion-card-header>
+    DATOS DEL USUARIO 
+    </ion-card-header>
+    <ion-card-content>
+    <ion-list>
+      <ion-item>
+        <ion-label fixed>Nombre</ion-label>
+        <ion-input type="text"[(ngModel)]="pass"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>Apellido</ion-label>
+        <ion-input type="text"[(ngModel)]="pass"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>Genero</ion-label>
+        <ion-input type="text"[(ngModel)]="pass"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>Usuario</ion-label>
+        <ion-input type="text"[(ngModel)]="pass"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>Clave</ion-label>
+        <ion-input type="text"[(ngModel)]="pass"></ion-input>
+      </ion-item>
+      </ion-list>
+      <div padding> 
+        <ion-button block (click)="enviaUsuario()">CREAR</ion-button>
+      </div>
+      <div padding> 
+        <ion-button block (click)="cambiaralLogin()">CREAR</ion-button>
+      </div>
+     
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>
