@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tabs',
@@ -7,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabsPage {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
- 
+ inicio(){
+  this.router.navigate(['/tab1']);
+ }
+
+ iniciodos(){
+  this.router.navigate(['/tab2']);
+ }
 
 }

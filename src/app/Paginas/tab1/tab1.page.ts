@@ -3,6 +3,8 @@ import { Pelicula } from 'src/app/interfaces/interfaces';
 import { MoviesService } from 'src/app/services/movies.service';
 import { PeliculaEN } from 'src/app/models/peliculaa';
 import { Router } from '@angular/router';
+import { ModalController } from '@ionic/angular';
+import { DetalleComponent } from 'src/app/modulos/detalle/detalle.component';
 @Component({
   selector: 'app-tab1',
   templateUrl: './tab1.page.html',
@@ -19,7 +21,8 @@ export class Tab1Page implements OnInit {
     freeMode: true
   };
 
-  constructor(private movieService: MoviesService) { }
+  constructor(private movieService: MoviesService,
+              private modal:ModalController) { }
   ngOnInit() {
     this.movieService.getFeature()
       .subscribe(response => {
@@ -39,6 +42,8 @@ export class Tab1Page implements OnInit {
   cargarMas() {
     this.getPopulares();
   }
+  
+
   getPopulares() {
     this.movieService.getPopulars()
       .subscribe(response => {
@@ -46,4 +51,17 @@ export class Tab1Page implements OnInit {
         this.peliculasPopulares = tmp;
       });
   }
+  async abrirModal(){
+    const mmodal = await this.modal.create({
+      component:DetalleComponent,
+      componentProps:{
+        mensaje:'General'
+      }
+    });
+    await mmodal.present();
+    const{data} = await mmodal.onDidDismiss();
+    console.log(data);
+
+  }
+  
 }

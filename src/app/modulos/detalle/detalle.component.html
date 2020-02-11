@@ -1,3 +1,22 @@
-<p>
-  detalle works!
-</p>
+<ion-header>
+  <ion-buttons slot="start" (click)="cambiarTab()">
+    <ion-back-button defaultHref="/tab1"></ion-back-button>
+    <ion-icon name="arrow-back-outline"></ion-icon>
+  </ion-buttons>
+</ion-header>
+
+<ion-content>
+  
+  <div class="ion-padding">
+    Descripcion General  
+  </div>
+  <div class="ion-padding">
+    Votos:
+    <ion-icon name="done-all"></ion-icon>
+    <ion-icon name="star"></ion-icon>
+    <ion-icon name="star"></ion-icon>
+  </div>
+  <div padding> 
+    <ion-button (click)="onClick()">Comprar Desde$$:</ion-button>
+  </div>
+</ion-content>

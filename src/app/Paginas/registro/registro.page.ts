@@ -20,8 +20,7 @@ export class RegistroPage implements OnInit {
   enviarUsuario() {
     this.movieService.usuarioPost(this.usuarioo)
     .subscribe(res1 => {
-      console.log(res1);
-      
+      console.log(res1); 
     });
   }
   ngOnInit() {

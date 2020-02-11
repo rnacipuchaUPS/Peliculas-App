@@ -12,31 +12,31 @@
     <ion-card-content>
     <ion-list>
       <ion-item>
-        <ion-label fixed>Nombre</ion-label>
-        <ion-input type="text"[(ngModel)]="usuarioo.Nombre"></ion-input>
+        <ion-label fixed>Nombre:</ion-label>
+        <ion-input type="text"[(ngModel)]="usuarioo.nombre" name="nombre"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label fixed>Apellido</ion-label>
-        <ion-input type="text"[(ngModel)]="usuarioo.Apellido"></ion-input>
+        <ion-label fixed>Apellido:</ion-label>
+        <ion-input type="text"[(ngModel)]="usuarioo.apellido" name="apellido"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label fixed>Genero</ion-label>
-        <ion-input type="text"[(ngModel)]="usuarioo.Genero"></ion-input>
+        <ion-label fixed>Genero:</ion-label>
+        <ion-input type="text"[(ngModel)]="usuarioo.genero" name="genero"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label fixed>Usuario</ion-label>
-        <ion-input type="text"[(ngModel)]="usuarioo.Usuario"></ion-input>
+        <ion-label fixed>Usuario:</ion-label>
+        <ion-input type="text"[(ngModel)]="usuarioo.usuario" name="usuario"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label fixed>Clave</ion-label>
-        <ion-input type="text"[(ngModel)]="usuarioo.Clave"></ion-input>
+        <ion-label fixed>Clave:</ion-label>
+        <ion-input type="text"[(ngModel)]="usuarioo.clave" name="clave"></ion-input>
       </ion-item>
       </ion-list>
       <div padding> 
-        <ion-button block (click)="enviaUsuario()">CREAR</ion-button>
+        <ion-button block (click)="enviarUsuario()">CREAR USUARIO</ion-button>
       </div>
       <div padding> 
-        <ion-button block (click)="cambiaralLogin()">CREAR</ion-button>
+        <ion-button block (click)="cambiaralLogin()">INICIAR SESION</ion-button>
       </div>
      
     </ion-card-content>

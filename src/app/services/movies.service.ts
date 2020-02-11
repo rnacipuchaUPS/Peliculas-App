@@ -81,7 +81,11 @@ export class MoviesService {
 
   }
  // usuarioLogin(usu:UsuarioEN):Observable<UsuarioEN>{
- //   return this.http.post<UsuarioEN>('http://192.168.43.122:8080/ProyectoPeliculas/srv/Usuarios/', usu, {httpHeaders});
+ //   return this.http.post<UsuarioEN>('http://192.168.43.122:8080/ProyectoPeliculas/srv/Usuarios/loginUsu?usuario{String}&clave={String}');
+
+ // }
+//getPeliculaDetalle(p:PeliculaEN):Observable<PeliculaEN>{
+ //   return this.http.get<PeliculaEN>('http://192.168.43.122:8080/ProyectoPeliculas/srv/Peliculas/listarP');
 
  // }
 }

@@ -35,7 +35,7 @@
   <ion-slides mode="ios" pager="ios" scrollbar="ios">
     <ion-slide *ngFor="let p of peliculaa">
       <ion-card>
-        <ion-card-header>
+        <ion-card-header (click)="abrirModal()">
           <ion-card-subtitle>{{ p.descripcion }}</ion-card-subtitle>
           <ion-card-title>{{ p.titulo }}</ion-card-title>
         </ion-card-header>
